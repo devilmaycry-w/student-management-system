@@ -21,7 +21,7 @@ jobs:
           distribution: 'temurin'  # You can use another JDK if needed
 
       - name: 🔗 Download MySQL Connector JAR
-        run: wget -O mysql-connector-java.jar https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.33/mysql-connector-java-8.0.33.jar
+        run: wget -O mysql-connector-java.jar https://repo1.maven.org/maven2/mysql/mysql-connector-j/8.3.0/mysql-connector-j-8.3.0.jar
 
       - name: 🚀 Compile Java Files
         run: javac -cp ".:mysql-connector-java.jar" src/*.java
